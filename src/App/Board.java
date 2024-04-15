@@ -78,9 +78,13 @@ public abstract class Board {
         return currentGameState;
     }
     
-    /*insert computer moves function here
-     * WILL DO LATER
-     */
+    public void makeComputerMove() {
+        int row = rand_num.nextInt(grid.length);
+        int col = rand_num.nextInt(grid.length);
+        if (!makeMove(row,col)) {
+            makeComputerMove();
+        }
+    }
     
     public boolean makeMove(int row, int column) {
     	

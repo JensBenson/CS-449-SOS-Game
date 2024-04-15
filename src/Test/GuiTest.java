@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class GuiTest {
 
     @Test
-    public void testValidSize() {
+    public void testBoardSize() {
     	
         Gui gui = new Gui();
         
